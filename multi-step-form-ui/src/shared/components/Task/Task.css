@@ -1,0 +1,51 @@
+.steps {
+    margin-left: 16px;
+}
+
+.steps p {
+    margin: 0;
+}
+
+.steps p:first-child {
+    color: var(--Light-Blue, #ABBCFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Body (S) */
+    font-family: Ubuntu-Regular;
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.steps p:last-child {
+    color: var(--White, #FFF);
+    font-family: Ubuntu-Bold;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.steps-btn {
+    position: relative;
+    color: #FFF;
+    width: 33px;
+    height: 33px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: var(--White, #FFF);
+    border: solid 1px white;
+    border-radius: 50%;
+}
+
+.steps-btn p {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    width: 16px;
+    height: 23px;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -8px;
+}

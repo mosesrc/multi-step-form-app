@@ -1,5 +1,15 @@
 .background {
     width: 274px;
     height: 568px;
-    background-image: url('../../../assets/images/bg-sidebar-desktop.svg') 
+    padding-left: 32px;
+    padding-top: 40px;
+    padding-right: 80px;
+    padding-bottom: 300px;
+    background-image: url('../../../assets/images/bg-sidebar-desktop.svg')
+}
+
+.tasks {
+    display: flex;
+    height: 33px;
+    margin-bottom: 32px;
 }
