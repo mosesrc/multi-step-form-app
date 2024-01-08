@@ -7,5 +7,12 @@ section {
     box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.10);
     width: 940px;
     height: 600px;
+    padding: 16px;
     border-radius: 15px;
+}
+
+.container {
+    height: 584px;
+    margin: 0;
+    border: solid 1px red;
 }

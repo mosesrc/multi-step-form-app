@@ -6,7 +6,9 @@ function HomeContainer() {
 
     return (
         <section>
-            Home Container
+            <div className='container'>
+                
+            </div>
         </section>
     )
 }
