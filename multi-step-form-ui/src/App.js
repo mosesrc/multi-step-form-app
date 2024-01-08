@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import HomeContainer from './components/HomeContainer/HomeContainer';
+import Home from './shared/containers/Home/Home';
 
 function App() {
   return (
     <>
-      <HomeContainer />
+      <Home />
     </>
   );
 }

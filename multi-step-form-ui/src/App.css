@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* Responsive Queries */
 body {
   background-color: #BEE2FD;
