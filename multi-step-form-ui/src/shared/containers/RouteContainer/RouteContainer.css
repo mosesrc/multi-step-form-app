@@ -1,5 +1,7 @@
 .routes-container {
     width: 450px;
+    margin-top: 56px;
     margin-left: 100px;
+    margin-bottom: 92px;
     border: solid 1px red;
 }
