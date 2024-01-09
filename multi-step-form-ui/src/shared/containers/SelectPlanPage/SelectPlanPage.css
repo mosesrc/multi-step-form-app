@@ -1,0 +1,43 @@
+.select-plan {}
+
+.plan-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 450px;
+    height: 160px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.plan-items li {
+    width: 138px;
+    height: 160px;
+    padding: 20px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--Border-Color, #D6D9E6);
+    background: var(--White, #FFF);
+}
+
+.plan-items li h4 {
+    color: var(--Denim, #022959);
+    font-family: Ubuntu-Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 39px;
+    margin-bottom: 7px;
+}
+
+.plan-items li p {
+    margin: 0;
+    color: var(--Grey, #9699AA);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Body (M) */
+    font-family: Ubuntu-Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

@@ -21,6 +21,32 @@ body {
   padding: 105px 17%;
 }
 
+.page-header {
+  width: 450px;
+  color: var(--Denim, #022959);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Heading */
+  font-family: Ubuntu-Bold;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 11px;
+}
+
+.page-description {
+  color: var(--Grey, #9699aa);
+  font-feature-settings: "clig" off, "liga" off;
+  margin-top: 0;
+  margin-bottom: 32px;
+  /* Body (L) */
+  font-family: Ubuntu-Regular;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 25px;
+  /* 156.25% */
+}
+
 @media (max-width: 400px) {
 
 }

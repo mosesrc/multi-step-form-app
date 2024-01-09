@@ -1,0 +1,105 @@
+.toggle_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 48px;
+  margin-top: 32px;
+  font-family: Ubuntu-Bold;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 8px;
+  background: var(--Very-Light-Grey, #F8F9FF);
+}
+
+.toggle_button div {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 183px;
+  height: 21px;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.toggle_button div p {
+  margin: 0;
+}
+
+.selected {
+  color: var(--Denim, #022959);
+}
+
+.not_selected {
+  color: var(--Grey, #9699AA);
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+  margin: 0;
+  /* padding: 20px; */
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  width: 38px;
+  height: 20px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #022959;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 10px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

@@ -5,8 +5,8 @@ import "./InfoPage.css";
 function InfoPage() {
   return (
     <section className="info-page">
-      <h2>Personal info</h2>
-      <p>Please provide your name, email address, and phone number.</p>
+      <h2 className="page-header">Personal info</h2>
+      <p className="page-description">Please provide your name, email address, and phone number.</p>
 
       <form>
         <div>
