@@ -1,0 +1,68 @@
+.add-ons {
+    border: solid 1px orange;
+}
+
+.add-ons-form menu {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.add-ons-form menu input[type='checkbox']:before {
+    width: 30px;
+    height: 30px;
+    border-radius: 10.5%;
+    stroke: #D6D9E6;
+    border: solid 1px red;
+}
+
+.add-ons-form menu li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 450px;
+    height: 81px;
+    border-radius: 8px;
+    border: 1px solid var(--Border-Color, #D6D9E6);
+    background: var(--White, #FFF);
+}
+
+.add-ons-form menu li div {
+    width: 200px;
+    height: 43px;
+    display: flex;
+    padding: 2px 1px 0px 0px;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.add-ons-form menu li div label h4 {
+    color: var(--Denim, #022959);
+    height: 18px;
+    font-family: Ubuntu-Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.add-ons-form menu li div p {
+    color: var(--Grey, #9699AA);
+    font-family: Ubuntu-Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    margin: 0;
+}
+
+.selected {
+    border-radius: 8px;
+    border: 1px solid var(--Purple, #483EFF);
+    background: var(--Very-Light-Grey, #F8F9FF);
+}

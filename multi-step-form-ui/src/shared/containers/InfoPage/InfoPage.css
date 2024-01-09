@@ -3,7 +3,7 @@ form {
   flex-direction: column;
 }
 
-label {
+.info-form label {
   display: block;
   margin-bottom: 8px;
   color: var(--Denim, #022959);
@@ -15,7 +15,7 @@ label {
   line-height: normal;
 }
 
-input {
+.info-form input {
   border-radius: 8px;
   border: 1px solid var(--Border-Color, #d6d9e6);
   background: var(--White, #fff);

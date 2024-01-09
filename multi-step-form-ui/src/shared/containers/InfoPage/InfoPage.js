@@ -8,7 +8,7 @@ function InfoPage() {
       <h2 className="page-header">Personal info</h2>
       <p className="page-description">Please provide your name, email address, and phone number.</p>
 
-      <form>
+      <form className="info-form">
         <div>
           <label>Name</label>
           <input placeholder='e.g. Stephen King' />
