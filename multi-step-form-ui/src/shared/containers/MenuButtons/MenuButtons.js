@@ -1,9 +1,9 @@
 import React from "react";
 import Button from "../../components/Button/Button";
 
-import "./ToggleButtons.css";
+import "./MenuButtons.css";
 
-function ToggleButtons() {
+function MenuButtons() {
   return (
     <div className='toggle-button-container'>
       <Button style={"go-back"} content={"Go Back"} />
@@ -12,4 +12,4 @@ function ToggleButtons() {
   );
 }
 
-export default ToggleButtons;
+export default MenuButtons;

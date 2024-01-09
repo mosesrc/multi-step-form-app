@@ -1,21 +1,21 @@
 import React from "react";
 import SideBar from "../SideBar/Sidebar";
 import RouteContainer from "../RouteContainer/RouteContainer";
-import ToggleButtons from "../ToggleButtons/ToggleButtons";
+import MenuButtons from "../MenuButtons/MenuButtons";
 
 import "./Home.css";
 
 function Home() {
   return (
-    <section>
+    <main>
       <div className='container'>
         <SideBar />
         <div>
           <RouteContainer />
-          <ToggleButtons />
+          <MenuButtons />
         </div>
       </div>
-    </section>
+    </main>
   );
 }
 

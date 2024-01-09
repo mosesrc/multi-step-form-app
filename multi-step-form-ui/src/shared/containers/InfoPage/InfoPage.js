@@ -4,7 +4,7 @@ import "./InfoPage.css";
 
 function InfoPage() {
   return (
-    <div>
+    <section className="info-page">
       <h2>Personal info</h2>
       <p>Please provide your name, email address, and phone number.</p>
 
@@ -22,7 +22,7 @@ function InfoPage() {
           <input placeholder='e.g. +1 234 567 890' />
         </div>
       </form>
-    </div>
+    </section>
   );
 }
 
