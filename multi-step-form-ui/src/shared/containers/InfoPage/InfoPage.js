@@ -10,15 +10,15 @@ function InfoPage() {
 
             <form>
                 <div>
-                    <lable>Name</lable>
+                    <label>Name</label>
                     <input placeholder='e.g. Stephen King' />
                 </div>
                 <div>
-                    <lable>Email Address</lable>
+                    <label>Email Address</label>
                     <input placeholder='e.g. stephenking@lorem.com' />
                 </div>
                 <div>
-                    <lable>Phone Number</lable>
+                    <label>Phone Number</label>
                     <input placeholder='e.g. +1 234 567 890' />
                 </div>
             </form>

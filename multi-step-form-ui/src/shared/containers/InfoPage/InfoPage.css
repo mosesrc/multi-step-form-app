@@ -1,0 +1,62 @@
+h2 {
+    width: 450px;
+    color: var(--Denim, #022959);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Heading */
+    font-family: Ubuntu-Bold;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 11px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--Denim, #022959);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Body (M) */
+    font-family: Ubuntu-Regular;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+}
+
+input {
+    border-radius: 8px;
+    border: 1px solid var(--Border-Color, #D6D9E6);
+    background: var(--White, #FFF);
+    width: 450px;
+    height: 48px;
+    margin-bottom: 24px;
+    flex-shrink: 0;
+    color: var(--Grey, #9699AA);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Ubuntu-Medium;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 25px;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    /* 156.25% */
+}
+
+div p {
+    color: var(--Grey, #9699AA);
+    font-feature-settings: 'clig' off, 'liga' off;
+    margin-top: 0;
+    margin-bottom: 32px;
+    /* Body (L) */
+    font-family: Ubuntu-Regular;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 25px;
+    /* 156.25% */
+}
