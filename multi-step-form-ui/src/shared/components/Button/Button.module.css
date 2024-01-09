@@ -1,19 +1,29 @@
+.go-back {
+  width: 70px;
+  height: 18px;
+  padding: 0;
+  color: var(--Grey, #9699aa);
+  background-color: #fff;
+  border: none;
+  font-family: Ubuntu-Medium;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
 
+.next-step {
+  width: 123px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--Denim, #022959);
+  border: none;
+  color: var(--White, #fff);
+  font-family: Ubuntu-Medium;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
 
-/* .btn p {
-    display: flex;
-    width: 16px;
-    height: 23px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: var(--White, #FFF);
-    text-align: center;
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-} */
+.confirm {
+}
