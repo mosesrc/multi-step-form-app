@@ -1,4 +1,5 @@
 import React from "react";
+import CheckBox from "../../components/CheckBox/CheckBox";
 
 import "./AddOnPage.css";
 
@@ -10,34 +11,31 @@ function AddOnPage() {
             <form className="add-ons-form">
                 <menu>
                     <li>
-                        <input name="online_services" type="checkbox" />
-                        <div>
-                            <label htmlFor="online_services">
-                                <h4>Online service</h4>
-                            </label>
-                            <p>Access to multiplayer games</p>
-                        </div>
-                        <p>+$1/mo</p>
+                        <CheckBox
+                            labelName={'online_services'}
+                            inputName={'online_services'}
+                            header={'Online service'}
+                            description={'Access to multiplayer games'}
+                            planRate={'+$1/mo'}
+                        />
                     </li>
                     <li>
-                        <input name="larger_storage" type="checkbox" />
-                        <div>
-                            <label htmlFor="larger_storage">
-                                <h4>Larger storage</h4>
-                            </label>
-                            <p>Extra 1TB of cloud save</p>
-                        </div>
-                        <p>+$2/mo</p>
+                        <CheckBox
+                            labelName={'larger_storage'}
+                            inputName={'larger_storage'}
+                            header={'Larger storage'}
+                            description={'Extra 1TB of cloud save'}
+                            planRate={'+$2/mo'}
+                        />
                     </li>
                     <li>
-                        <input name="customizable_profile" type="checkbox" />
-                        <div>
-                            <label htmlFor="customizable_profile">
-                                <h4>Customizable Profile</h4>
-                            </label>
-                            <p>Custom theme on your profile</p>
-                        </div>
-                        <p>+$2/mo</p>
+                        <CheckBox
+                            labelName={'customizable_profile'}
+                            inputName={'customizable_profile'}
+                            header={'Customizable Profile'}
+                            description={'Custom theme on your profile'}
+                            planRate={'+$2/mo'}
+                        />
                     </li>
                 </menu>
             </form>

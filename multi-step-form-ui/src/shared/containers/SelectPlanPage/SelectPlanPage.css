@@ -1,4 +1,7 @@
-.select-plan {}
+.select-plan {
+    box-sizing: content-box;
+    margin-bottom: 20px;
+}
 
 .plan-items {
     display: flex;
