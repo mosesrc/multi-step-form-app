@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './shared/containers/Home/Home';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './shared/pages/Home/Home';
+
+const router = createBrowserRouter([
+  {path: '/', element: <Home />}
+]);
 
 function App() {
-  return (
-    <>
-      <Home />
-    </>
-  );
+  return <RouterProvider router={router} /> 
 }
 
 export default App;

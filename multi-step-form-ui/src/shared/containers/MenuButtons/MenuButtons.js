@@ -3,12 +3,12 @@ import Button from "../../components/Button/Button";
 
 import "./MenuButtons.css";
 
-function MenuButtons() {
+function MenuButtons({show}) {
   return (
     <div className='toggle-button-container'>
-      <Button style={"go-back"} content={"Go Back"} />
+      <Button style={"go-back"} content={"Go Back"} show={show} />
       <Button style={"next-step"} content={"Next Step"} />
-      {/* <Button style={'confirm'} content={'Confirm'} /> */}
+      {show && <Button style={'confirm'} content={'Confirm'} />}
     </div>
   );
 }

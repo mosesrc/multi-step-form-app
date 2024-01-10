@@ -1,15 +1,15 @@
 import React from 'react';
-import InfoPage from '../InfoPage/InfoPage';
-import SelectPlanPage from '../SelectPlanPage/SelectPlanPage';
-import AddOnPage from '../AddOnPage/AddOnPage';
-import SummaryPage from '../SummaryPage/SummaryPage';
+import InfoPage from '../../pages/InfoPage/InfoPage';
+import SelectPlanPage from '../../pages/SelectPlanPage/SelectPlanPage';
+import AddOnPage from '../../pages/AddOnPage/AddOnPage';
+import SummaryPage from '../../pages/SummaryPage/SummaryPage';
 
 import './RouteContainer.css';
 
 function RouteContainer() {
     return (
         <div className='routes-container'>
-            {/* <InfoPage /> */}
+            <InfoPage />
             {/* <SelectPlanPage /> */}
             {/* <AddOnPage /> */}
             {/* <SummaryPage /> */}

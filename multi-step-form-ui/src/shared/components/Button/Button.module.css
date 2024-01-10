@@ -11,6 +11,10 @@
   line-height: normal;
 }
 
+.visible {
+  visibility: hidden;
+}
+
 .next-step {
   width: 123px;
   height: 48px;
