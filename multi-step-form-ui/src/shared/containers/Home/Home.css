@@ -15,5 +15,27 @@ main {
     display: flex;
     height: 568px;
     margin: 0;
-    border: solid 1px red;
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    color: #FFF;
+    font-family: Ubuntu-Bold;
+    position: relative;
+    top: 50px;
+    left: 325px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution p {
+    margin: 2px;
 }

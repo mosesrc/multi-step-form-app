@@ -8,6 +8,7 @@ function MenuButtons() {
     <div className='toggle-button-container'>
       <Button style={"go-back"} content={"Go Back"} />
       <Button style={"next-step"} content={"Next Step"} />
+      {/* <Button style={'confirm'} content={'Confirm'} /> */}
     </div>
   );
 }

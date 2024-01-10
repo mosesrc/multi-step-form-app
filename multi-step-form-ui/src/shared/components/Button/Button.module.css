@@ -26,4 +26,16 @@
 }
 
 .confirm {
+  width: 123px;
+  height: 48px;
+  color: var(--White, #FFF);
+  text-align: center;
+  font-family: Ubuntu-Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  border-radius: 8px;
+  background: var(--Purple, #483EFF);
 }

@@ -39,13 +39,13 @@
 }
 
 .steps-btn p {
-    position: absolute;
+    position: relative;
     margin: 0 auto;
     color: #FFF;
     text-align: center;
     width: 16px;
     height: 23px;
-    top: 40%;
+    top: 50%;
     left: 50%;
     margin-top: -10px;
     margin-left: -8px;
