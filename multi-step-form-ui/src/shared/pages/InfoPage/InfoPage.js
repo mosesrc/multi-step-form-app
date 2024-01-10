@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
+import { ThemeContext } from "../../context/context";
 
 import "./InfoPage.css";
 
 function InfoPage() {
+  const themeCtx = useContext(ThemeContext);
+
+  useEffect(() => {
+    themeCtx.hideBtn(true);
+    themeCtx.showConfirm(false);
+  }, [themeCtx.hideGoBackBtn, themeCtx.showConfirmBtn]);
+
   return (
     <section className="info-page">
       <h2 className="page-header">Personal info</h2>

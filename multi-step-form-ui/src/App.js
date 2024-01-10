@@ -1,6 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { ThemeContext } from './shared/context/context';
+import './App.css';
 import Home from './shared/pages/Home/Home';
 import MainRouterContainer from './shared/containers/MainRoutingContainer/MainRoutingContainer'
 import RouteContainer from './shared/containers/RouteContainer/RouteContainer';
@@ -36,7 +37,24 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />
+  const [hideGoBackBtn, setHideGoBackBtn] = useState(true);
+  const [showConfirmBtn, setShowConfirmBtn] = useState(false)
+
+  const hideBtn = (val) => {
+    setHideGoBackBtn(val);
+  }
+
+  const showConfirm = (val) => {
+    setShowConfirmBtn(val);
+  }
+
+  const themeState = { hideGoBackBtn, hideBtn, showConfirmBtn, showConfirm };
+
+  return (
+    <ThemeContext.Provider value={themeState}>
+      <RouterProvider router={router} />
+    </ThemeContext.Provider>
+  )
 }
 
 export default App;

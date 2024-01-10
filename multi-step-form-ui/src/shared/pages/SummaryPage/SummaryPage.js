@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
+import { ThemeContext } from "../../context/context";
 import AddOnItem from "../../components/AddOnItem/AddOnItem";
 
 import "./SummaryPage.css";
 
 function SummaryPage() {
+    const themeCtx = useContext(ThemeContext);
+
+    useEffect(() => {
+        themeCtx.showConfirm(true)
+    }, [themeCtx.showConfirmBtn]);
+
     return (
         <section className="summary-page">
             <h2 className="page-header">Finishing up</h2>

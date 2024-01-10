@@ -1,12 +1,13 @@
 import React from "react";
 import ToggleButton from "../../components/ToggleButton/ToggleButton";
-import {ReactComponent as ArcadeIcon} from '../../../assets/images/icon-arcade.svg';
-import {ReactComponent as AdvancedIcon} from '../../../assets/images/icon-advanced.svg';
-import {ReactComponent as ProIcon} from '../../../assets/images/icon-pro.svg';
+import { ReactComponent as ArcadeIcon } from '../../../assets/images/icon-arcade.svg';
+import { ReactComponent as AdvancedIcon } from '../../../assets/images/icon-advanced.svg';
+import { ReactComponent as ProIcon } from '../../../assets/images/icon-pro.svg';
 
 import "./SelectPlanPage.css";
 
 function SelectPlanPage() {
+    
     return (
         <section className="select-plan">
             <h2 className="page-header">Select your plan</h2>

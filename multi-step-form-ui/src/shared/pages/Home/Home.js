@@ -1,17 +1,16 @@
-import { useState } from "react";
+import React from "react";
 import { Outlet } from "react-router-dom";
 import SideBar from "../../containers/SideBar/Sidebar";
 
 import "./Home.css";
 
 function Home() {
-  const [showPrevBtn, setShowPrevBtn] = useState(false)
 
   return (
     <main>
       <div className='container'>
         <SideBar />
-        <Outlet show={showPrevBtn} />
+        <Outlet />
       </div>
       <div className="attribution">
         <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>

@@ -1,11 +1,12 @@
 import { Outlet } from "react-router-dom"
 import MenuButtons from "../MenuButtons/MenuButtons";
 
-function MainRoutingContainer({show}) {
+function MainRoutingContainer() {
+    
     return (
         <div>
             <Outlet />
-            <MenuButtons show={show} />
+            <MenuButtons />
         </div>
     )
 }
