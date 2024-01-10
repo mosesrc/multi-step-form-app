@@ -1,0 +1,27 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-info {
+    color: var(--Grey, #9699AA);
+    font-family: Ubuntu-Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.item-rate {
+    color: var(--Denim, #022959);
+    font-family: Ubuntu-Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    margin: 0;
+}

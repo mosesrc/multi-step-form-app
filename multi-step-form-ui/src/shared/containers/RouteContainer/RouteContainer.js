@@ -12,7 +12,7 @@ function RouteContainer() {
             {/* <InfoPage /> */}
             {/* <SelectPlanPage /> */}
             {/* <AddOnPage /> */}
-            <SummaryPage />
+            {/* <SummaryPage /> */}
         </div>
     )
 }
