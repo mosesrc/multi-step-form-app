@@ -8,8 +8,9 @@ function SummaryPage() {
     const themeCtx = useContext(ThemeContext);
 
     useEffect(() => {
+        themeCtx.hideBtn(false);
         themeCtx.showConfirm(true)
-    }, [themeCtx.showConfirmBtn]);
+    }, [themeCtx.hideGoBackBtn, themeCtx.showConfirmBtn]);
 
     return (
         <section className="summary-page">

@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
+import { ThemeContext } from "../../context/context";
 import CheckBox from "../../components/CheckBox/CheckBox";
 
 import "./AddOnPage.css";
 
 function AddOnPage() {
+    const themeCtx = useContext(ThemeContext);
+    
+    useEffect(() => {
+        themeCtx.hideBtn(false);
+        themeCtx.showConfirm(false);
+    }, [themeCtx.hideGoBackBtn, themeCtx.showConfirmBtn]); 
+
     return (
         <section className="add-ons">
             <h2 className="page-header">Pick add-ons</h2>

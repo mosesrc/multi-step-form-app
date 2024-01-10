@@ -12,17 +12,15 @@ function MenuButtons() {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const navigateToPage = (func, path) => {
+    const newPath = func(path);
+    navigate(newPath, { state: { lastPath: path } });
+  }
+
   const determineNextPath = (curPath) => {
     const currentPage = paths.indexOf(curPath);
     const nextPage = paths[currentPage + 1];
     return nextPage;
-  };
-
-  const nextPageHandler = (e) => {
-    e.preventDefault();
-    themeCtx.hideBtn(false);
-    const newPath = determineNextPath(location.pathname);
-    navigate(newPath, {state: {lastPath: location.pathname}});
   };
 
   const determinePrevPath = (curPath) => {
@@ -31,18 +29,26 @@ function MenuButtons() {
     return prevPage;
   }
 
+  const nextPageHandler = (e) => {
+    e.preventDefault();
+    navigateToPage(determineNextPath, location.pathname);
+  };
+
   const prevPageHandler = (e) => {
     e.preventDefault();
-    themeCtx.showConfirm(false);
-    const newPath = determinePrevPath(location.pathname);
-    navigate(newPath, {state: {lastPath: location.pathname}});
+    navigateToPage(determinePrevPath, location.pathname);
   }
-  
+
+  const confirmHandler = (e) => {
+    e.preventDefault();
+    navigateToPage(determineNextPath, location.pathname);
+  }
+
   return (
     <div className='toggle-button-container'>
       <Button style={"go-back"} content={"Go Back"} show={themeCtx.hideGoBackBtn} handler={prevPageHandler} />
       {!themeCtx.showConfirmBtn && <Button style={"next-step"} content={"Next Step"} handler={nextPageHandler} />}
-      {themeCtx.showConfirmBtn && <Button style={'confirm'} content={'Confirm'} />}
+      {themeCtx.showConfirmBtn && <Button style={'confirm'} content={'Confirm'} handler={confirmHandler} />}
     </div>
   );
 }
